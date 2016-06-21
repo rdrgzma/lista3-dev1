@@ -6,9 +6,12 @@
 package modelo;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
 import javax.persistence.Table;
 
 /**
@@ -25,6 +28,8 @@ public class Usuario implements Serializable {
     private double altura;
     private String login;
     private String senha;
+    @OneToMany
+    private List<RegistroPeso> registrosPesosUsuario;
     
     public String getNome() {
         return nome;

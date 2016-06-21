@@ -3,10 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/00026108/Documents/NetBeansProjects/Lista3-Exercicio02/src/java/hibernate.cfg.xml</file>
-            <file>file:/C:/Users/00026108/Documents/NetBeansProjects/Lista3-Exercicio02/web/index.xhtml</file>
-            <file>file:/C:/Users/00026108/Documents/NetBeansProjects/Lista3-Exercicio02/src/java/modelo/Usuario.java</file>
-            <file>file:/C:/Users/00026108/Documents/NetBeansProjects/Lista3-Exercicio02/src/java/modelo/RegistroPeso.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/modelo/Usuario.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/modelo/RegistroPeso.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/persistencia/UsuarioDAO.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/bean/ExercicioBean.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/bean/UsuarioBean.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/persistencia/RegistroPesoDAO.java</file>
+            <file>file:/home/marcio/Área%20de%20Trabalho/Lista3-Dev1/Lista3-Exercicio02/src/java/persistencia/HibernateUtil.java</file>
         </group>
     </open-files>
 </project-private>
