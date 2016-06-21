@@ -5,16 +5,27 @@
  */
 package modelo;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author 00026108
  */
-public class Usuario {
+@Entity
+@Table(name = "usuarios")
+public class Usuario implements Serializable {
+    @Id
+    @GeneratedValue
+    private int id;
     private String nome;
     private double altura;
     private String login;
     private String senha;
-
+    
     public String getNome() {
         return nome;
     }
@@ -46,6 +57,12 @@ public class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }    
 }

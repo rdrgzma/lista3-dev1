@@ -5,22 +5,48 @@
  */
 package modelo;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
 
 /**
  *
  * @author 00026108
  */
-public class RegistroPeso {
-    private Date data;
+@Entity
+@Table(name = "registrospeso")
+public class RegistroPeso implements Serializable {
+    @Id
+    @GeneratedValue
+    private int id;
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date dataRegistro;
     private double peso;
-
-    public Date getData() {
-        return data;
+    @ManyToOne
+    @JoinColumn(name="id_usuario")
+     private Usuario usuario;
+    
+     public int getID() {
+        return id;
     }
 
-    public void setData(Date data) {
-        this.data = data;
+    public void setID(int ID) {
+        this.id = ID;
+    }
+    
+
+    public Date getDataRegistro() {
+        return dataRegistro;
+    }
+
+    public void setDataRegistro(Date data) {
+        this.dataRegistro = data;
     }
 
     public double getPeso() {
@@ -46,6 +72,21 @@ public class RegistroPeso {
         }
             return "Obesidade Grau III";
     }
-    
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
 }
